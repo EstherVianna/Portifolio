@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600;700&display=swap');
+
+@keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;}
+    }
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Signika', sans-serif;;
+}
+
+
+body{
+    background: #14171A;
+    margin: 0 100px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    height:fit-content;
+    margin-top: 8px;
+    border-top: 1px solid rgba(245, 224, 104, 0.185);
+}
+
+
+.logo a{
+    margin-top: 20px;
+    flex: 30%;
+    cursor: pointer;
+}
+
+.menu {
+    font-size: 16px;
+    margin-left: 40%;
+    margin-top: 35px;
+    flex: 70%;
+    color: #303030;
+    text-transform: uppercase;
+}
+
+.menu a{
+    margin: 10px 20px;
+    color: #CCBC61;
+    font-size: 1.2rem;
+    transition: all 500ms ease-in;
+}
+
+.menu a:hover{
+    background-color: #CCBC61;
+    color: #303030;
+    opacity: 80%;
+    padding: 10px 15px;
+    transition: all 500ms ease-in-out;
+}
+
+.botao{
+    font-weight: 400;
+    position: relative;
+    left: 25%;
+    padding: 20px 35px;
+    color: #252525;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 24px;
+
+    background: linear-gradient(
+      60deg,
+      hsl(66, 23%, 17%),
+      hsl(44, 85%, 66%),
+      hsl(44, 78%, 55%),
+      hsl(37, 82%, 89%),
+      hsl(73, 84%, 71%));
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    animation: moveGradient 10s alternate infinite;
+    box-shadow: 3px 3px 15px hsl(44, 85%, 66%);
+    opacity: 0.7;
+}
+
+.botao:hover{
+    background: #CCBC61;
+    box-shadow: 1px 1px 10px hsl(44, 85%, 66%);
+}
+
+.content{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 400px;
+}
+
+.text{
+    flex: 60%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.textoDev{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.textoNome{
+    font-size: 50px;
+    margin-left: 25%;
+    letter-spacing: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 5px rgb(245, 224, 104);
+
+}
+
+.text p{
+    color:rgb(245, 224, 104) ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    height: 100px;
+    width:70%;
+    margin-top: 15%;
+}
+
+.image{
+    flex:35%;
+    margin-right:5%;
+    text-align: center;
+    transition: all 1s linear;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+
+.image:hover{
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+
+#sobreMim{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 90px 30px auto;
+    color: #CCBC61;
+    font-family: sans-serif;
+}
+
+
+.lista p {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.lista li {
+    list-style-type: circle;
+    color: #cccc;
+}
+
+#sobreMim h1{
+    color:  #CCBC61;
+    text-align: center;
+    margin: 1vh;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 5px #726b40 ;
+
+}
+
+#projetos h3{
+    color: #CCBC61;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#projetos p{
+    display: block;
+    color: #cccc;
+    padding: 10px;
+    margin: 5px;
+}
+
+#projetos a{
+    display: block;
+    color: white;
+    margin: 0 10px;
+}
+
+#projetos a:hover{
+    color: #CCBC61;
+}
+
+.pj1{
+    display: inline-block;
+    margin-top: 0;
+    margin: 5vh;
+    width: 310px;
+    height: 200px;
+    border: 1px solid #ccbc6179;
+    box-shadow: 5px 5px 3px #ccbc6179;
+}
+
+#projetos{
+    visibility: hidden;
+    margin-bottom: 100px;
+}
+
+
+.rodape{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row;
+    margin-top: 10px;
+    height: 160px;
+    border-top: 1px solid #303030;
+    color:#ccbc618e;
+}
+
+#dev{
+    margin-top: 130px;
+}
+
+#contatos{
+    flex: 40%;
+    margin-bottom: 5px;
+}
+
+#contatos input{
+    color: #ccbc618e;
+    background-color: #14171A;
+    border: none;
+    font-size: 1em;
+    width: 190px;
+}
+
+#contatos input:hover{
+    color: #cccc;
+}
+
+#clipboard{
+    cursor: pointer;
+    background-color: #14171A;
+    border: none;
+}
+
+.socialMedia {
+    flex: 30%;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: flex-end;
+    margin: 5px
+}
+
+.socialMedia a{
+    font-size: 1.3rem;
+    color: #CCBC61;
+    margin-bottom: 5px;
+    
+}
+.socialMedia a:hover{
+    color: #cccc;
+}
+
+.float{
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top:70%;
+    right:15px;
+}
+
+.float a{
+    margin-bottom: 15px;
+}
+
+.float a:focus{
+    box-shadow: 1px 1px 1px white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(41, 41, 41); 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ccbc6179;
+    opacity: 0.5; 
+  }
+
