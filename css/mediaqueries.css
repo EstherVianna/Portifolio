@@ -1,0 +1,120 @@
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+
+    .menu{
+        margin-left: 0px;
+    }
+    .menu a:hover{
+        padding: 0px;
+    }
+
+    .text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+    
+    .botao{
+        text-align: justify;
+    }
+    .image{
+        display: none;
+    }
+
+    .textoDev{
+        margin-left: 5%;
+    }
+
+    #about{
+        width: 300px;
+    }
+
+    .lista li {
+        width: 200px;
+        margin-left: 100px;
+    }
+
+    #email{
+        display: inline;
+        font-size: 1em;
+        width: 280px;
+        right: 110px;
+    }
+
+    #clipboard{
+    right: 165px;
+    }
+
+    .ttm{
+        font-size: 1.5em;
+    }
+
+    .socialMedia{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .socialMedia a{
+        font-size: 1em;
+    }
+
+    .socialMedia a:hover{
+        padding: 3px;
+    }
+
+    .float{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1023px){
+    .menu {
+        margin-left: 0;
+    }
+
+    #sm{
+        margin-left: 25%;
+    }
+    .menu a:hover{
+        padding: 5px;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .textoDev{
+        margin-left: 5%;
+    }
+
+    #about {
+        margin-left: 25px;
+        text-align: justify;
+    }
+
+    #email{
+        display: inline;
+        font-size: 1.3em;
+        width: 280px;
+        right: 110px;
+    }
+    #clipboard{
+        right: 130px;
+    }
+
+    .ttm{
+        font-size: 1.7em;
+    }
+
+    .socialMedia{
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+    .socialMedia a{
+        font-size: 1.3em;
+    }
+
+    .socialMedia a:hover{
+        padding: 5px;
+    }
+
+}

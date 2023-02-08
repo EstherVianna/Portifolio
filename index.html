@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <title>Esther Vianna</title>
 </head>
 <body>
     <nav>
         <div class="navbar">
-            <span class="logo">
+            <div class="logo">
                 <a href="index.html"><img src="imagens/Frame 2.png" alt=""></a>
-            </span>
+            </div>
             <div class="menu">
-                <a id="menu-sm" href="#sobreMim">Sobre mim</a>
+                <a id="sm" href="#sobreMim">Sobre mim</a>
                 <a id="menu-pj" href="#projetos">Projetos</a>
                 <a id="menu-pj" href="#contatos">Contatos</a>
             </div>
@@ -26,24 +27,22 @@
         <div class="text">
             <span class="textoNome">Esther</span> <br> <span class="textoDev">Desenvolvedora Front-end</span>
             <p>Será um prazer conhecer você!  Pra me conhecer melhor</p>
-            <a class="botao" href="#">Fale comigo</a>
+            <a class="botao" href="https://api.whatsapp.com/send?phone=5524993057104&text=Ol%C3%A1!%20Estou%20aqui%20atrav%C3%A9s%20do%20seu%20portif%C3%B3lio,%20podemos%20conversar?!%20" target="_blank">Fale comigo</a>
         </div>
         <div class="image">
-            <img src="imagens/maodandooi.png" width="100%" height="400px" alt="meu-avatar" >
+            <img src="imagens/juicy-girl-working-at-home.gif" width="120%" height="400px" alt="meu-avatar" delay >
         </div>
     </div>
-    <div id="sobreMim">
-            <h1>Sobre mim</h1>
-            <p>Olá!
-                Meu nome é Esther, nascida e criada em Petrópolis, serra do Rio de Janeiro e tenho 21 anos.
-                    em 2019, depois de passar pra Fisioterapia pelo ProUni, comecei minha vida universitária na Estácio de sá da minha cidade.
-                    3 anos depois, quando eu estava no 7º semestre e voltando aos estudos presenciais pós-pandemia, Petrópolis sofreu a maior tragédia da sua história e infelizmente eu vivenciei tudo aquilo; tais fatos mudaram totalmente a minha mente e o meu jeito de viver a vida e, com isso, decidi sair da minha zona de conforto: Tranquei minha faculdade de fisioterapia e me mudei pra o estado do Rio Grande do Norte, onde eu e meu namorado (desenvolvedor back-end) moramos nos dias de hoje.
-            <h1>Minhas habilidades</h1>
+    <div id="sobreMim" >
+            <h1 class="ttm">Sobre mim</h1>
+            <p id="about">Eu sou Esther Vianna, tenho 21 anos e sou apaixonada por tecnologia e design. Desde julho de 2022, estou estudando programação e estou pronta para enfrentar novos desafios como programadora Front End Junior. Possuo habilidades em HTML, CSS e JavaScript e estou comprometida a criar soluções web inovadoras e de alta qualidade para meus clientes. Estou animada para continuar crescendo e aprendendo nesta área em constante evolução.</p>
+               
+            <h1 class="ttm">Minhas habilidades</h1>
                 <ul class="lista">
                     <p>Hard Skills</p>
                     <li>HTML 5</li>
                     <li>CSS 6</li>
-                    <li>Javascript</li>
+                    <li>Javascript/ES6</li>
                     <li>React</li>
                     <li>Bootstrap</li>
                 </ul>
@@ -51,70 +50,64 @@
                 <p>Soft Skills</p>
                 <li>Gerenciamento de tempo</li>
                 <li>Trabalho em equipe</li>
-                <li>Excelênte atendimento ao publico</li>
+                <li>Atendimento ao público</li>
                 <li>Proatividade</li>
-                <li>......</li>
                 </ul>
-            <h1 id="pj">Projetos</h1>
+            <h1 id="pj projetos" class="ttm">Projetos</h1>
     </div>
     <div id="projetos">
-            <div class="pj1">
-                <h3>Página de login</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi neque quia autem eum adipisci mollitia.</p>
-                <a href="">Ver mais</a>
-                <a href="">Código no GitHub</a>
-            </div>
-            <div class="pj1">
-                <h3>Site de agência de marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi neque quia autem eum adipisci mollitia.</p>
-                <a href="">Ver mais</a>
-                <a href="">Código no GitHub</a>
-            </div>
-            <div class="pj1">
-                <h3> Site conversor de moedas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi neque quia autem eum adipisci mollitia.</p>
-                <a href=""> Ver mais</a>
-                <a href="">Código no GitHub</a>
-            </div>
-            <div class="pj1">
-                <h3>Tela de entrada netflix</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi neque quia autem eum adipisci mollitia.</p>
-                <a href="">Ver mais</a>
-                <a href="">Código no GitHub</a>
-            </div>
-            <div class="pj1">
-                <h3>Site de agencia bancaria</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi neque quia autem eum adipisci mollitia.</p>
-                <a href="">Ver mais</a>
-                <a href="">Código no GitHub</a>
-            </div>
-            <div class="pj1">
-                <h3>em breve</h3>
-                <p>Novos projetos serão adicionados em breve Novos projetos serão adicionados em breve Novos projetos serão.</p>
-                <a href="" style="visibility: hidden;">Ver mais</a>
-                <a href="" style="visibility: hidden;">Código no GitHub</a>
+            <div class="proj" align="center">
+                <img src="imagens/PortifolioVitor.png"  align="middle" >
+                    <h1>Portifolio backend</h1>
+                    <p>Projeto desenvolvido em parceria com desenvolvedor back end. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus velit placeat veritatis voluptatum optio nesciunt fugit doloribus, dolore ex, fuga qui cupiditate iste nihil, cumque perspiciatis totam quod recusandae reprehenderit.</p>
+                        <button>
+                            <a href="https://github.com/vitorkayron/portifolio" target="_blank">Code Source</a>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                            </svg>
+                        </button>
                 </div>
+                <div class="proj" align="center">
+                    <img src="imagens/Conversor_style.png"  align="middle" >
+                        <h1>Conversor de moedas</h1>
+                        <p>Projeto criado a partir de uma aula no intensivão da Alura onde, ao invés de criar o conversor de apenas uma moeda, utilizei uma pagina base pra direcionar o usuário para diversas moedas que podem ser convertidas.
+                        </p>
+                        <button>
+                            <a href="https://github.com/EstherVianna/currencyconverter" target="_blank">Code Source</a>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                            </svg>
+                        </button>
+                </div>
+                    <div class="proj" align="center">
+                        <img src="imagens/agencia_marketing.png"  align="middle" >
+                            <h1>Agência de Marketing</h1>
+                            <p>Projeto desenvolvido em parceria com desenvolvedor back end. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus velit placeat veritatis voluptatum optio nesciunt fugit doloribus, dolore ex, fuga qui cupiditate iste nihil, cumque perspiciatis totam quod recusandae reprehenderit.</p>
+                            <button>
+                                <a href="https://github.com/EstherVianna/agenciaMarketing" target="_blank">Code Source</a>
+                                <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                                </svg>
+                            </button>
+                    </div> 
     </div>
     <footer>
-        <div class="rodape">
-            <div id="contatos">
-                <h3>Contatos</h3>
-                <input id="email" disabled value="esther.avianna@gmail.com"></input>
+        <div class="rodape" id="contatos">
+            <h3 class="ttm">Contatos</h3>
+            <input id="email" disabled value="esther.avianna@gmail.com">
                 <button id="clipboard" onclick="copyAndPaste()">
-                    <img src="imagens/clipboard.png" width="24px" height="24px">
-                </button>
-                <p id="pText"></p>
-                
-            </div>
-            <p id="dev">Desenvolvido por Esther Alves Vianna</p>
+                    <img src="imagens/clipboard.png" width="24px" height="24px" title="Copiar">
+                </button> 
+            </input>
             <div class="socialMedia">
-
                 <a href="https://github.com/EstherVianna" target="_blank">
                     GitHub</a>
                 <a href="https://www.linkedin.com/in/esther-vianna-2202/" target="_blank">
                     LinkedIn</a>
-                <a href="https://instagram.com/sthervianna_?igshid=YmMyMTA2M2Y=" target="_blank">
-                    Instagram</a>
+
             </div>
         </div>
     </footer>

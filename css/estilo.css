@@ -5,17 +5,21 @@
       background-position: 100% 50%;}
     }
 
+root{
+    --preto: #303030;
+    --dourado:#fdc93a;
+}
+
 *{
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Signika', sans-serif;;
+    font-family: 'Signika', sans-serif;
+    color:#252525;
 }
 
-
 body{
-    background: #14171A;
-    margin: 0 100px;
+    margin: 0 3px;
 }
 
 html{
@@ -43,19 +47,20 @@ html{
     margin-left: 40%;
     margin-top: 35px;
     flex: 70%;
-    color: #303030;
+    color: #252525;
     text-transform: uppercase;
+    flex-flow: row nowrap;
 }
 
 .menu a{
     margin: 10px 20px;
-    color: #CCBC61;
+    color:#fdce2e;
     font-size: 1.2rem;
     transition: all 500ms ease-in;
 }
 
 .menu a:hover{
-    background-color: #CCBC61;
+    background-color:#fdce2e;
     color: #303030;
     opacity: 80%;
     padding: 10px 15px;
@@ -87,7 +92,7 @@ html{
 }
 
 .botao:hover{
-    background: #CCBC61;
+    background:#fdce2e;
     box-shadow: 1px 1px 10px hsl(44, 85%, 66%);
 }
 
@@ -102,13 +107,14 @@ html{
 
 .text{
     flex: 60%;
-    color: white;
+    color: #504f47;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
 .textoDev{
+    margin-left: 10%;
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -124,7 +130,6 @@ html{
 }
 
 .text p{
-    color:rgb(245, 224, 104) ;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
     height: 100px;
@@ -133,29 +138,10 @@ html{
 }
 
 .image{
-    flex:35%;
-    margin-right:5%;
+    flex:25%;
+    margin-right:10%;
     text-align: center;
-    transition: all 1s linear;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    -moz-transition: 1s;
-    transition: 1s;
 }
-
-.image:hover{
-    -webkit-transform: translateY(-8px);
-    -moz-transform: translateY(-8px);
-    -ms-transform: translateY(-8px);
-    -o-transform: translateY(-8px);
-    transform: translateY(-8px);
-}
-
 
 #sobreMim{
     visibility: hidden;
@@ -164,8 +150,13 @@ html{
     align-items: center;
     flex-direction: column;
     margin: 90px 30px auto;
-    color: #CCBC61;
+    text-shadow:#fdce2e;
     font-family: sans-serif;
+}
+
+#about {
+    text-align: justify;
+    width: 600px;
 }
 
 
@@ -176,115 +167,149 @@ html{
 }
 
 .lista li {
-    list-style-type: circle;
-    color: #cccc;
+    width: 200px;
+    margin-left: 150px;
 }
 
-#sobreMim h1{
-    color:  #CCBC61;
+.ttm{
     text-align: center;
     margin: 1vh;
-    padding: 20px 0;
+    padding: 15px 5px;
     font-size: 2rem;
     font-family: sans-serif;
-    text-shadow: 1px 1px 5px #726b40 ;
+    text-shadow: 1px 1px 5px  ;
 
-}
-
-#projetos h3{
-    color: #CCBC61;
-    font-family: sans-serif;
-    text-align: center;
-    margin: 10px auto;
-}
-
-#projetos p{
-    display: block;
-    color: #cccc;
-    padding: 10px;
-    margin: 5px;
-}
-
-#projetos a{
-    display: block;
-    color: white;
-    margin: 0 10px;
-}
-
-#projetos a:hover{
-    color: #CCBC61;
-}
-
-.pj1{
-    display: inline-block;
-    margin-top: 0;
-    margin: 5vh;
-    width: 310px;
-    height: 200px;
-    border: 1px solid #ccbc6179;
-    box-shadow: 5px 5px 3px #ccbc6179;
 }
 
 #projetos{
-    visibility: hidden;
-    margin-bottom: 100px;
-}
-
-
-.rodape{
     display: flex;
-    justify-content: flex-start;
-    flex-flow: row;
-    margin-top: 10px;
-    height: 160px;
-    border-top: 1px solid #303030;
-    color:#ccbc618e;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-flow: row wrap;
+}
+.proj:hover{
+    opacity: 1;
 }
 
-#dev{
-    margin-top: 130px;
+.proj:not(:hover){
+    opacity: 0.7;
 }
 
-#contatos{
-    flex: 40%;
+.proj{
     margin-bottom: 5px;
 }
 
-#contatos input{
-    color: #ccbc618e;
-    background-color: #14171A;
-    border: none;
-    font-size: 1em;
-    width: 190px;
+.proj a{
+    color: #252525;
+    font-size: 1rem;
 }
 
-#contatos input:hover{
-    color: #cccc;
+.proj img{
+    width:380px; 
+    height:200px;
+}
+
+.proj{
+    min-width: 280px;
+    max-width: 380px;
+    height: 490px;
+    border: 1px solid#fdce2e79;
+    box-shadow: 5px 5px 3px#fdce2e79;
+}
+
+.proj p{
+    height: 130px;
+}
+
+.proj button{
+        cursor: pointer;
+        font-weight: 700;
+        font-family: Helvetica,"sans-serif";
+        transition: all .2s;
+        padding: 10px 20px;
+        border-radius: 100px;
+        background: #fdc93a;;
+        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+      
+    .proj button:hover{
+    background:#fdc93a;
+    }
+      
+    .proj button > svg{
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+    }
+      
+    .proj button:hover svg{
+    transform: translateX(5px);
+    }
+      
+    .proj  button:active{
+    transform: scale(0.95);
+    }
+      
+.rodape{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    height:150px;
+    border-top: 1px solid #303030;
+    color:#252525;
+}
+
+#email{
+    position: relative;
+    border: none;
+    font-size: 1.3em;
+    width: 250px;
+    margin-top: 70px;
+    right: 90px;
+}
+
+#email input:hover{
+    color:#4d4b4b;
 }
 
 #clipboard{
+    position: relative;
+    right: 80px;
     cursor: pointer;
-    background-color: #14171A;
     border: none;
+    background: none;
+    margin-top: 73px;
+
 }
 
 .socialMedia {
-    flex: 30%;
     display: flex;
     flex-flow: column;
-    justify-content: start;
-    align-items: flex-end;
-    margin: 5px
+    align-items: top;
+    margin-left: 720px;
+    margin-top: 20px;
+    height: fit-content;
 }
 
 .socialMedia a{
-    font-size: 1.3rem;
-    color: #CCBC61;
-    margin-bottom: 5px;
-    
+    align-items: flex-end;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
 }
-.socialMedia a:hover{
-    color: #cccc;
+
+.socialMedia a:hover {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #a39d66 0%, #fdc93a 100%);
+    border-radius: 86px 20px 40px 55px;
+    transition: .5s all ease-out;
+    margin-bottom: 20px;
+
 }
 
 .float{
@@ -292,7 +317,7 @@ html{
     flex-flow: column;
     position: fixed;
     top:70%;
-    right:15px;
+    right: 5px;
 }
 
 .float a{
@@ -312,7 +337,7 @@ html{
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #ccbc6179;
+    background:#fdce2e79;
     opacity: 0.5; 
   }
 

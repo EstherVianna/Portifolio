@@ -15,3 +15,17 @@ function copyAndPaste(){
     document.innerHTML(`Texto copiado: ${email.value}`)
     
 } 
+
+window.onscroll = function() {
+    const target = document.querySelector(".rodape");
+    const targetPosition = target.getBoundingClientRect().top;
+    const height = window.innerHeight;
+    const float = document.querySelector(".float");
+
+    if(targetPosition < height){
+        float.style.display = "none"
+    }
+    else if(targetPosition > height){
+        float.style.display = "flex";
+    }
+}
