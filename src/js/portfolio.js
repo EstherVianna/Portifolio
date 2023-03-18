@@ -1,12 +1,12 @@
-//const reveal = () => {ScrollReveal({ reset: true});
+const reveal = () => {ScrollReveal({ reset: true});
 
 
-//ScrollReveal().reveal('#aboutMe', {duration:1000});
-//ScrollReveal().reveal('#projects', {duration: 2500});
-//ScrollReveal().reveal('#contact', {duration: 2500});
-//}
+ScrollReveal().reveal('#aboutMe', {duration:1000});
+ScrollReveal().reveal('#projects', {duration: 2500});
+ScrollReveal().reveal('#contact', {duration: 2500});
+}
 
-//reveal()
+reveal()
 
 function copyAndPaste(){
     const email = document.querySelector("#email");

@@ -1,0 +1,81 @@
+.content{
+    display: flex;
+    flex-flow: row wrap;
+    height: 700px;
+    width: 100%;
+    background-color:var(--scnd-background-color);
+    border-bottom: 5px solid var(--border);
+}
+
+.text{
+    flex: 50%;
+    color: #504f47;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: inherit;
+    text-align: center;
+}
+
+.dev{
+    display: inline-flex;
+    position: relative;
+    top: 50px;
+    right: 280px;
+    font-size: 35px;
+    font-family: var(--font-family-subtitle);
+    font-style: oblique;
+    width: fit-content;
+    height: fit-content;
+    background-color: inherit;
+}
+
+.Name{
+    display: inline-flex;
+    width: fit-content;
+    height: fit-content;
+    font-size: 4em;
+    letter-spacing: 5px;
+    font-family:var(--font-family-title);
+    text-shadow: 2px 2px 5px var(--link-hover);
+    background-color: inherit;
+    text-align: center;
+}
+
+.text p{
+    font-family: var(--font-family-text);
+    font-size: 1.5em;
+    height: 50px;
+    margin-top: 15%;
+    background-color: inherit;
+    text-align: center;
+    width: 70%;
+}
+
+.btn{
+    position: relative;
+    padding: 20px 35px;
+    top: 190px;
+    left: 250px;
+    color: var(--branco);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(
+      60deg,
+      hsla(66, 25%, 47%, 0.801),
+      hsl(44, 85%, 66%),
+      rgb(155, 131, 65),
+      hsla(51, 12%, 23%, 0.651),
+      hsl(73, 84%, 71%));
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    animation: moveGradient 10s alternate infinite;
+    box-shadow: 3px 3px 15px var(--link-hover);
+    opacity: 0.7;
+}
+
+.btn:hover{
+    background:var(--link-hover);
+    box-shadow: 1px 1px 10px hsl(44, 85%, 66%);
+}

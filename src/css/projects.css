@@ -1,0 +1,83 @@
+.proj-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-flow: row wrap;
+}
+
+.proj{
+    min-width: 280px;
+    max-width: 400px;
+    height: 560px;
+    border: 2px solid var(--preto);
+    box-shadow: 5px 5px 3px #5555;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.proj:hover{
+    opacity: 1;
+}
+
+.proj:not(:hover){
+    opacity: 0.5;
+}
+
+.proj h1{
+    margin-bottom: 10px;
+}
+
+.proj a{
+    color: var(--link-hover);
+    font-size: 1rem;
+}
+
+.proj img{
+    width:375px; 
+    height:200px;
+    margin: 5px auto 20px auto;
+    border-radius: 14px;
+}
+
+.proj p{
+    height: 130px;
+    width:350px ;
+    margin-bottom: 15px;
+}
+
+.proj button{
+    cursor: pointer;
+    font-weight: 700;
+    transition: all .2s;
+    padding: 5px 10px;
+    border-radius: 100px;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    font-size: 15px;
+    color: var(--link-hover);
+    margin-bottom: 20px;
+}
+
+.proj button > svg{
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+    fill: var(--link-hover);
+}
+      
+.proj button:hover svg{
+    transform: translateX(5px);
+}
+      
+.proj  button:active{
+    transform: scale(0.95);
+}

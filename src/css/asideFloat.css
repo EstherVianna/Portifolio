@@ -1,0 +1,17 @@
+.float{
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top:70%;
+    right: 5px;
+    background-color: transparent;
+}
+
+.float a{
+    margin-bottom: 15px;
+    background-color: inherit;
+}
+
+.float img{
+    background-color: inherit;
+}
