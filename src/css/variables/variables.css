@@ -1,0 +1,13 @@
+:root{
+    --preto: #303030;
+    --dourado:#fdc93a;
+    --dourado2:#fdce2e;
+    --branco:#f7f5f5;
+    --background-color: #101010;
+    --scnd-background-color: #1f100b;
+    --link-hover: #f6b066;
+    --font-family-title:'Rambla', sans-serif;
+    --font-family-subtitle:'Vollkorn', serif;
+    --font-family-text:'Open Sans', sans-serif;
+    --border:#2b1a14;
+}

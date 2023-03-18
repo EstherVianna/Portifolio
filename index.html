@@ -4,61 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/mediaqueries.css">
-    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link rel="shortcut icon" href="./imagens/Frame 2.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/reset/reset.css">
+    <link rel="stylesheet" href="src/css/variables/variables.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/mediaQueries/mediaqueries.css">
     <title>Esther Vianna</title>
 </head>
 <body>
-    <nav>
-        <div class="navbar">
+    <nav class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="imagens/Frame 2.png" alt=""></a>
+                <a href="index.html">&lt;/ EV &gt;</a>
             </div>
             <div class="menu">
-                <a id="sm" href="#sobreMim">Sobre mim</a>
-                <a id="menu-pj" href="#projetos">Projetos</a>
-                <a id="menu-pj" href="#contatos">Contatos</a>
+                <a href="#aboutMe">Sobre mim</a>
+                <a href="#projects">Projetos</a>
+                <a href="#contact">Contatos</a>
+                <a href="" download id="cv">Currículo</a>
             </div>
-        </div>
     </nav>
     <div class="content">
         <div class="text">
-            <span class="textoNome">Esther</span> <br> <span class="textoDev">Desenvolvedora Front-end</span>
+            <span class="Name">Esther</span>
+            <span class="dev">Desenvolvedora Front-end</span>
             <p>Será um prazer conhecer você!  Pra me conhecer melhor</p>
-            <a class="botao" href="https://api.whatsapp.com/send?phone=5524993057104&text=Ol%C3%A1!%20Estou%20aqui%20atrav%C3%A9s%20do%20seu%20portif%C3%B3lio,%20podemos%20conversar?!%20" target="_blank">Fale comigo</a>
+            <a class="btn" href="https://api.whatsapp.com/send?phone=5524993057104&text=Ol%C3%A1!%20Estou%20aqui%20atrav%C3%A9s%20do%20seu%20portif%C3%B3lio,%20podemos%20conversar?!%20" target="_blank">Fale comigo</a>
         </div>
-        <div class="image">
-            <img src="imagens/juicy-girl-working-at-home.gif" width="120%" height="400px" alt="meu-avatar" delay >
-        </div>
+            <img src="src/imagens/brownwomancopia.png" width="fit-content" height="530px" alt="meu-avatar" delay >
     </div>
-    <div id="sobreMim" >
-            <h1 class="ttm">Sobre mim</h1>
-            <p id="about">Eu sou Esther Vianna, tenho 21 anos e sou apaixonada por tecnologia e design. Desde julho de 2022, estou estudando programação e estou pronta para enfrentar novos desafios como programadora Front End Junior. Possuo habilidades em HTML, CSS e JavaScript e estou comprometida a criar soluções web inovadoras e de alta qualidade para meus clientes. Estou animada para continuar crescendo e aprendendo nesta área em constante evolução.</p>
-               
-            <h1 class="ttm">Minhas habilidades</h1>
-                <ul class="lista">
-                    <p>Hard Skills</p>
+    <div id="aboutMe" >
+            <h1 class="titles">Introdução</h1>
+            <p id="about">Eu sou Esther Vianna, tenho 22 anos e sou apaixonada por tecnologia e design. Meus conhecimentos sobre programação têm crescido desde junho de 2022 estou pronta para enfrentar novos desafios como programadora Front End Junior. Possuo habilidades em HTML, CSS, JavaScript e React e estou comprometida a criar soluções web inovadoras e de alta qualidade para meus clientes. Estou animada para continuar crescendo e aprendendo nesta área em constante evolução.</p>
+            <h1 class="titles">Serviços</h1>
+            <div class="list">
+                <ul class="flex-list">
+                    <h3>Skills Técnicas</h3>
                     <li>HTML 5</li>
                     <li>CSS 6</li>
                     <li>Javascript/ES6</li>
                     <li>React</li>
                     <li>Bootstrap</li>
                 </ul>
-                <ul class="lista">
-                <p>Soft Skills</p>
-                <li>Inglês nível B2</li>
-                <li>Gerenciamento de tempo</li>
-                <li>Trabalho em equipe</li>
-                <li>Atendimento ao público</li>
-                <li>Proatividade</li>
+                <ul class="flex-lis">
+                    <h3>Soft Skills</h3>
+                    <li>Inglês nível B2</li>
+                    <li>Gerenciamento de tempo</li>
+                    <li>Trabalho em equipe</li>
+                    <li>Atendimento ao público</li>
+                    <li>Proatividade</li>
                 </ul>
-            <h1 id="pj projetos" class="ttm">Projetos</h1>
+        </div> 
     </div>
-    <div id="projetos">
+    <div class="proj-title" id="projects" >
+        <h1 class="titles">Projetos</h1>
+   </div>
+    <div class="projects">
+        
             <div class="proj" align="center">
-                <img src="imagens/PortifolioVitor.png" align="middle" >
+                <img src="src/imagens/PortifolioVitor.png" align="middle" >
                     <h1>Portifolio backend</h1>
                     <p>Projeto desenvolvido em parceria com desenvolvedor back end. Base feita em Python/Django, meu trabalho foi escrever o HTML e o CSS e integrar os projetos de acordo com o banco de dados de projetos do desenvolvedor.</p>
                         <button>
@@ -68,9 +71,16 @@
                                 <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
                             </svg>
                         </button>
+                        <button>
+                            <a href="https://github.com/vitorkayron/portifolio" target="_blank">Live Demo</a>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                            </svg>
+                        </button>
                 </div>
                 <div class="proj" align="center">
-                    <img src="imagens/tela_dolar.png" align="middle" >
+                    <img src="src/imagens/tela_dolar.png" align="middle" >
                         <h1>Conversor de moedas</h1>
                         <p>Projeto criado a partir de uma aula no intensivão da Alura onde, ao invés de criar o conversor de apenas uma moeda, utilizei uma pagina base pra direcionar o usuário para diversas moedas que podem ser convertidas.
                         </p>
@@ -81,9 +91,16 @@
                                 <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
                             </svg>
                         </button>
+                        <button>
+                            <a href="https://github.com/EstherVianna/currencyconverter" target="_blank">Live Demo</a>
+                            <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                            </svg>
+                        </button>
                 </div>
                     <div class="proj" align="center">
-                        <img src="imagens/agencia_marketing.png" align="middle" >
+                        <img src="src/imagens/agencia_marketing.png" align="middle" >
                             <h1>Agência de Marketing</h1>
                             <p>Inspirado no site fake feito nas aulas de CSS do curso Programação Web. Feito para consolidação e prática das propriedades aprendidas nas aulas. Curso realizado em Setembro de 2022.  </p>
                             <button>
@@ -93,9 +110,16 @@
                                     <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
                                 </svg>
                             </button>
+                            <button>
+                                <a href="https://github.com/EstherVianna/agenciaMarketing" target="_blank">Live Demo</a>
+                                <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                                </svg>
+                            </button>
                     </div>
                     <div class="proj" align="center">
-                        <img src="imagens/tela_game.png" align="middle" >
+                        <img src="src/imagens/tela_game.png" align="middle" >
                             <h1>Game Mata-Mosquito</h1>
                             <p>Reprodução de um jogo desenvolvido com a triade básica do desenvolvimento web, utilizando DOM e BOM para aprimorar a experiência do usuário e criação de fluxo de jogo para melhorar agilidade ao elevar os níveis. </p>
                             <button>
@@ -105,11 +129,17 @@
                                     <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
                                 </svg>
                             </button>
+                            <button>
+                                <a href="https://github.com/EstherVianna/GameMataMosquito" target="_blank">Live Demo</a>
+                                <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                                    <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                                </svg>
+                            </button>
                     </div> 
     </div>
-    <footer>
-        <div class="rodape" id="contatos">
-            <h3 class="ttm">Contatos</h3>
+    <footer class="footer" id="contact" >
+            <h1 class="titles">Contatos</h1>
             <input id="email" disabled value="esther.avianna@gmail.com">
                 <button id="clipboard" onclick="copyAndPaste()">
                     <img src="imagens/clipboard.png" width="24px" height="24px" title="Copiar">
@@ -120,9 +150,7 @@
                     GitHub</a>
                 <a href="https://www.linkedin.com/in/esther-vianna-2202/" target="_blank">
                     LinkedIn</a>
-
             </div>
-        </div>
     </footer>
     <div class="float">
         <a href="https://github.com/EstherVianna" target="_blank">
@@ -135,7 +163,7 @@
             <img src="imagens/instagram.png" alt="">
         </a>
     </div>
-    
-    <script src="portfolio.js"></script>
+    <script src="./js/portfolio.js"></script>
+
 </body>
 </html>

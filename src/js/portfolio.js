@@ -1,9 +1,12 @@
-ScrollReveal({ reset: true });
+//const reveal = () => {ScrollReveal({ reset: true});
 
 
-ScrollReveal().reveal('#sobreMim', {duration: 3000});
-ScrollReveal().reveal('#projetos', {duration: 2500});
-ScrollReveal().reveal('#contatos', {duration: 2500});
+//ScrollReveal().reveal('#aboutMe', {duration:1000});
+//ScrollReveal().reveal('#projects', {duration: 2500});
+//ScrollReveal().reveal('#contact', {duration: 2500});
+//}
+
+//reveal()
 
 function copyAndPaste(){
     const email = document.querySelector("#email");
@@ -17,7 +20,7 @@ function copyAndPaste(){
 } 
 
 window.onscroll = function() {
-    const target = document.querySelector(".rodape");
+    const target = document.querySelector(".footer");
     const targetPosition = target.getBoundingClientRect().top;
     const height = window.innerHeight;
     const float = document.querySelector(".float");
@@ -29,3 +32,4 @@ window.onscroll = function() {
         float.style.display = "flex";
     }
 }
+
