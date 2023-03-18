@@ -11,5 +11,8 @@ Portfolio created to demonstrate my habilities as a front-end developer, where I
 - Responsive design;
 
 ## 🪄 Own inspiration
-In this project I tried to do something out of the dev bubble! No neon colors, no purple and blue color pallet. I had only one thing in my mind: represent my skin color and where I'm from, show everybody I'm a black woman and are capable of anything I want. Some people starts from nothing and we just have to keep ahead! 
+In this project, I tried to do something outside the dev bubble! No neon colors, no purple and blue color palette. I had only one thing in mind: to represent my skin color and where I come from, to show everybody that I am a black woman and am capable of anything I want. Some people start from nothing and we just have to keep moving forward!
+
+## ✅ Deploy
+<a href="" target="_blank> My Portfolio <a/>
 
