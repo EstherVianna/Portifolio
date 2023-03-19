@@ -9,9 +9,7 @@
 @import url(asideFloat.css);
 
 
-@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 @keyframes moveGradient {
     50% {

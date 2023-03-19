@@ -3,18 +3,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 120px 30px auto;
+    margin: 100px 30px auto;
     text-shadow: var(--dourado2);
     font-family: sans-serif;
 }
 
 .titles{
     text-align: center;
-    margin: 30px;
+    margin:  10px 30px;
     padding: 15px 5px;
     font-family: var(--font-family-title);
     letter-spacing: 3px;
-    border-top: 3px solid var(--link-hover);
+    border-top: 3px solid var(--accent-hover);
 }
 
 #about {
@@ -43,6 +43,6 @@
 }
 
 .list li:hover{
-    color: var(--link-hover);
+    color: var(--accent-hover);
     cursor: default;
 }

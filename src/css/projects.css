@@ -36,7 +36,7 @@
 }
 
 .proj a{
-    color: var(--link-hover);
+    color: var(--accent-hover);
     font-size: 1rem;
 }
 
@@ -63,7 +63,7 @@
     background-color: transparent;
     align-items: center;
     font-size: 15px;
-    color: var(--link-hover);
+    color: var(--accent-hover);
     margin-bottom: 20px;
 }
 
@@ -71,7 +71,7 @@
     width: 34px;
     margin-left: 10px;
     transition: transform .3s ease-in-out;
-    fill: var(--link-hover);
+    fill: var(--accent-hover);
 }
       
 .proj button:hover svg{

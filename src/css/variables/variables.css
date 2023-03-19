@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
 :root{
     --preto: #303030;
     --dourado:#fdc93a;
@@ -5,9 +9,10 @@
     --branco:#f7f5f5;
     --background-color: #101010;
     --scnd-background-color: #1f100b;
-    --link-hover: #f6b066;
-    --font-family-title:'Rambla', sans-serif;
-    --font-family-subtitle:'Vollkorn', serif;
-    --font-family-text:'Open Sans', sans-serif;
+    --accent-hover: #f6b066;
+    --font-family-title:'Candal', sans-serif;
+    --font-family-subtitle:'Raleway', sans-serif;;
+    --font-family-text:'Hind', sans-serif;
     --border:#2b1a14;
+    --font-size: 14px;
 }

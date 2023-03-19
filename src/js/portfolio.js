@@ -1,12 +1,22 @@
-const reveal = () => {ScrollReveal({ reset: true});
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "50px",
+    duration: 1400,
+  });
 
+  sr.reveal('#aboutMe', { delay: 300 });
+  sr.reveal('#projects', { delay: 300 });
+  sr.reveal('.projects', { delay: 400 });
+  sr.reveal('#contact', { delay: 400 });
 
-ScrollReveal().reveal('#aboutMe', {duration:1000});
-ScrollReveal().reveal('#projects', {duration: 2500});
-ScrollReveal().reveal('#contact', {duration: 2500});
-}
+const sr2 = ScrollReveal({
+    origin: "right",
+    distance: "100px",
+    duration: 500,
+});
 
-reveal()
+sr2.reveal('.menu', {delay: 500 })
+
 
 function copyAndPaste(){
     const email = document.querySelector("#email");

@@ -58,7 +58,7 @@
 .socialMedia a:hover {
     padding: 15px;
     font-size: 1.2rem;
-    background-image: linear-gradient(to right, #5555 0%, var(--link-hover), var(--dourado) 100%);
+    background-image: linear-gradient(to right, #5555 0%, var(--accent-hover), var(--dourado) 100%);
     border-radius: 86px 20px 40px 55px;
     transition: .5s all ease-out;
     margin-bottom: 20px;

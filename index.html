@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Esther Vianna">
+    <meta name="keywords" content="sites, web, desenvolvimento, frontend, programador, front-end, freelancer, freela, website, portfólio">
+    <meta property="og:title" content="Portfólio / Esther Vianna">
     <link rel="shortcut icon" href="./imagens/Frame 2.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/reset/reset.css">
     <link rel="stylesheet" href="src/css/variables/variables.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/mediaQueries/mediaqueries.css">
-    <title>Esther Vianna</title>
+    <script src="https://kit.fontawesome.com/26f41be346.js" crossorigin="anonymous"></script>
+    <title>Portfólio / Esther Vianna</title>
 </head>
 <body>
     <nav class="navbar">
@@ -24,17 +28,21 @@
             </div>
     </nav>
     <div class="content">
-        <div class="text">
-            <span class="Name">Esther</span>
-            <span class="dev">Desenvolvedora Front-end</span>
-            <p>Será um prazer conhecer você!  Pra me conhecer melhor</p>
-            <a class="btn" href="https://api.whatsapp.com/send?phone=5524993057104&text=Ol%C3%A1!%20Estou%20aqui%20atrav%C3%A9s%20do%20seu%20portif%C3%B3lio,%20podemos%20conversar?!%20" target="_blank">Fale comigo</a>
+        <div class="textBox">
+            <p id="name">Esther</p>
+            <p id="occ">Desenvolvedora Front-end</p>
+            <p id="slogan">Fornecendo soluções inovadoras e de excelência para a transformação digital das empresas.</p>
         </div>
-            <img src="src/imagens/brownwomancopia.png" width="fit-content" height="530px" alt="meu-avatar" delay >
+        <a class="btn" href="https://api.whatsapp.com/send?phone=5524993057104&text=Ol%C3%A1!%20Estou%20aqui%20atrav%C3%A9s%20do%20seu%20portif%C3%B3lio,%20podemos%20conversar?!%20" 
+            target="_blank">
+            Fale comigo
+        </a>
+        <img src="src/imagens/brownwomancopia.png" width="fit-content" height="530px" alt="meu-avatar" delay >
     </div>
     <div id="aboutMe" >
             <h1 class="titles">Introdução</h1>
-            <p id="about">Eu sou Esther Vianna, tenho 22 anos e sou apaixonada por tecnologia e design. Meus conhecimentos sobre programação têm crescido desde junho de 2022 estou pronta para enfrentar novos desafios como programadora Front End Junior. Possuo habilidades em HTML, CSS, JavaScript e React e estou comprometida a criar soluções web inovadoras e de alta qualidade para meus clientes. Estou animada para continuar crescendo e aprendendo nesta área em constante evolução.</p>
+            <p id="about">
+                Eu sou Esther Vianna, tenho 22 anos e sou apaixonada por tecnologia e design. Meus conhecimentos sobre programação têm crescido desde junho de 2022 estou pronta para enfrentar novos desafios como programadora Front End Junior. Possuo habilidades em HTML, CSS, JavaScript e React e estou comprometida a criar soluções web inovadoras e de alta qualidade para meus clientes/empresa. Estou animada para continuar crescendo e aprendendo nesta área em constante evolução.</p>
             <h1 class="titles">Serviços</h1>
             <div class="list">
                 <ul class="flex-list">
@@ -140,6 +148,9 @@
     </div>
     <footer class="footer" id="contact" >
             <h1 class="titles">Contatos</h1>
+            <div>
+                <p><i class="fa-solid fa-location-dot"></i></p>
+            </div>
             <div class="socialMedia">
                 <a href="https://github.com/EstherVianna" target="_blank">
                     GitHub</a>
@@ -160,7 +171,8 @@
             </a>
         </div>
     </aside>
-    <script src="./js/portfolio.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="src/js/portfolio.js" type="module"></script>
 
 </body>
 </html>

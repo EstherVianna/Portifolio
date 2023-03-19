@@ -1,81 +1,78 @@
 .content{
     display: flex;
-    flex-flow: row wrap;
-    height: 700px;
+    flex-flow: row nowrap;
+    height: 600px;
     width: 100%;
     background-color:var(--scnd-background-color);
     border-bottom: 5px solid var(--border);
 }
 
-.text{
-    flex: 50%;
+.content img{
+    max-width: 40%;
+}
+
+.textBox{
+    display: grid;
+    gap: 0.5em;
     color: #504f47;
-    margin-bottom: 30px;
-    margin-top: 30px;
     background-color: inherit;
-    text-align: center;
+    margin-left: 5%;
+    max-width: 40%;
 }
 
-.dev{
-    display: inline-flex;
-    position: relative;
-    top: 50px;
-    right: 280px;
-    font-size: 35px;
-    font-family: var(--font-family-subtitle);
-    font-style: oblique;
-    width: fit-content;
-    height: fit-content;
+.textBox p{
     background-color: inherit;
 }
 
-.Name{
-    display: inline-flex;
-    width: fit-content;
-    height: fit-content;
+#name{
     font-size: 4em;
     letter-spacing: 5px;
-    font-family:var(--font-family-title);
-    text-shadow: 2px 2px 5px var(--link-hover);
-    background-color: inherit;
+    margin-top: 1em;
+    font-family:var(--font-family-subtitle);
+    text-shadow: 2px 2px 5px var(--accent-hover);
     text-align: center;
 }
 
-.text p{
+#occ{
+    font-size: 2.5em;
+    text-align: center;
+    font-family: var(--font-family-subtitle);
+    font-style: oblique;
+}
+
+#slogan{
     font-family: var(--font-family-text);
     font-size: 1.5em;
-    height: 50px;
-    margin-top: 15%;
-    background-color: inherit;
-    text-align: center;
-    width: 70%;
+    max-width: 70%;
 }
 
 .btn{
+    width:20%;
+    height: fit-content;
+    padding: 10px;
     position: relative;
-    padding: 20px 35px;
-    top: 190px;
-    left: 250px;
-    color: var(--branco);
+    top: 450px;
     border-radius: 5px;
+    color: var(--preto);
     text-transform: uppercase;
-    font-size: 24px;
+    text-align: center;
+    font-size: calc(var(--font-size) + 10px);
     font-weight: 600;
     background: linear-gradient(
       60deg,
-      hsla(66, 25%, 47%, 0.801),
-      hsl(44, 85%, 66%),
-      rgb(155, 131, 65),
-      hsla(51, 12%, 23%, 0.651),
-      hsl(73, 84%, 71%));
+      #fad0a3,
+      #f8bf81,
+      #f6b066,
+      #db8b35,
+      #915312
+      );
     background-size: 300% 300%;
     background-position: 0 50%;
     animation: moveGradient 10s alternate infinite;
-    box-shadow: 3px 3px 15px var(--link-hover);
+    box-shadow: 1px 1px 10px var(--accent-hover);
     opacity: 0.7;
 }
 
 .btn:hover{
-    background:var(--link-hover);
-    box-shadow: 1px 1px 10px hsl(44, 85%, 66%);
+    background: #db8b35;
 }

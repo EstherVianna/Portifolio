@@ -15,16 +15,16 @@
 
 .logo a{
     color: var(--branco);
-    width: 100px;
+    width: 200px;
     font-family: var(--font-family-title);
     font-size: 2em;
     cursor: pointer;
     margin-left: 20px;
-    text-shadow: 1px 1px 40px var(--link-hover);
+    text-shadow: 1px 1px 40px var(--accent-hover);
 }
 
 .logo a:hover{
-    color: var(--link-hover);
+    color: var(--accent-hover);
 }
 
 .menu {
@@ -39,19 +39,20 @@
     margin: 10px 10px;
     font-size: 1em;
     transition: all 500ms ease-in;
-    border-top: 2px solid var(--link-hover);
+    border-top: 2px solid var(--accent-hover);
     padding-top: 5px;
+    font-size:calc(var(--font-size) + 2px) ;
 }
 
 .menu a:hover{
-    color:var(--link-hover);
+    color:var(--accent-hover);
     opacity: 80%;
     padding: 10px 15px;
     transition: all 500ms ease-in-out;
 }
 
 #cv{
-    color: var(--link-hover);
+    color: var(--accent-hover);
     border-top:none;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--branco);
