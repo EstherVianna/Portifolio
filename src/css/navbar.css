@@ -28,7 +28,7 @@
 }
 
 .menu {
-    margin-left: 50%;
+    margin-left: 45%;
     margin-top: 25px;
     flex: 70%;
     text-transform: uppercase;
@@ -36,8 +36,9 @@
 }
 
 .menu a{
-    margin: 10px 10px;
+    margin: 10px;
     font-size: 1em;
+    letter-spacing: 0.3px;
     transition: all 500ms ease-in;
     border-top: 2px solid var(--accent-hover);
     padding-top: 5px;

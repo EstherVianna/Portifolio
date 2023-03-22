@@ -1,7 +1,7 @@
 .footer{
     background-color: var(--scnd-background-color);
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
     margin-top: 10px;
     height:300px;
@@ -10,56 +10,77 @@
     color:var(--branco);
 }
 
-.footer > .titles{
-    background-color: inherit;
-    margin: 10px;
+.footer-container{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.2em;
 }
 
-#email{
-    position: relative;
-    border: none;
-    font-size: 1.3em;
-    margin-top: 70px;
-    right: 90px;
-    background-color: inherit;
+.footer-container > .titles{
+    display: block;
+    background-color: transparent;
+    width: 20%;
 }
 
-#email input:hover{
-    color:var(--branco);
+.footerContent{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 33.33%;
+    height: fit-content;
+    background-color: transparent;
 }
 
-#clipboard{
-    position: relative;
-    right: 80px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    margin-top: 73px;
+.footerContent p {
+    font-size: 1.2em;
+    background-color: transparent;
+    margin-top: 1em;
+}
+
+.footerContent i {
+    color: var(--accent-hover);
 }
 
 .socialMedia {
     display: flex;
     flex-flow: column;
     align-items: top;
-    margin-left: 720px;
-    margin-top: 20px;
     height: fit-content;
     background-color: inherit;
+    width: 20%;
 }
 
 .socialMedia a{
+    width: fit-content;
     align-items: flex-end;
-    font-size: 1.4rem;
-    margin-bottom: 25px;
-    color: var(--branco);
+    margin-bottom: 1.5em;
+    padding: 0em 1em;
     background-color: inherit;
+    border-radius: 100px;
+    border: 1px solid var(--accent-hover);
+    font-size: 1.4em;
+    color: var(--branco);
 }
 
 .socialMedia a:hover {
-    padding: 15px;
-    font-size: 1.2rem;
-    background-image: linear-gradient(to right, #5555 0%, var(--accent-hover), var(--dourado) 100%);
-    border-radius: 86px 20px 40px 55px;
+    background-image: linear-gradient(to right,
+    #f6b066 5%,
+    #db8b35,
+    #915312 100%);
+    border-radius: 100px;
     transition: .5s all ease-out;
-    margin-bottom: 20px;
+}
+
+.rights{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 25%;
+    background-color: transparent;
+}
+
+.rights p {
+    background-color: transparent;
 }

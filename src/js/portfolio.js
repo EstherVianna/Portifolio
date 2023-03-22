@@ -1,13 +1,16 @@
 const sr = ScrollReveal({
     origin: "top",
     distance: "50px",
-    duration: 1400,
+    duration: 2000,
   });
 
   sr.reveal('#aboutMe', { delay: 300 });
   sr.reveal('#projects', { delay: 300 });
   sr.reveal('.projects', { delay: 400 });
   sr.reveal('#contact', { delay: 400 });
+  sr.reveal('#name', { delay: 200 });
+  sr.reveal('#occ', { delay: 200 });
+  sr.reveal('#slogan', { delay: 200 });
 
 const sr2 = ScrollReveal({
     origin: "right",
