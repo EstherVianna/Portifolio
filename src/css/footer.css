@@ -76,11 +76,16 @@
 .rights{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: auto;
-    width: 25%;
+    width: 100%;
     background-color: transparent;
+    letter-spacing: 4px;
+    font-size: 12px;
 }
 
-.rights p {
-    background-color: transparent;
+.rights strong{
+    color: var(--accent-hover);
+    background-color: inherit;
+    margin-left: 5px;
 }
