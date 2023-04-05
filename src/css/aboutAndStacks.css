@@ -17,6 +17,10 @@
     border-top: 3px solid var(--accent-hover);
 }
 
+.titles:hover{
+    cursor: default;
+}
+
 #about {
     text-align: justify;
     width: 800px;

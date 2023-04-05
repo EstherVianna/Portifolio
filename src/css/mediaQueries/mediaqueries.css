@@ -1,9 +1,16 @@
+@import url(navbar.css);
+@import url(mainContainer.css);
+@import url(aboutAndStacks.css);
+@import url(projects.css);
+@import url(footer.css);
+@import url(asideFloat.css);
+
 @media only screen and (min-width: 300px) and (max-width: 600px) {
 
-    .menu{
+    nav .menu{
         margin-left: 0px;
     }
-    .menu a:hover{
+    nav.menu a:hover{
         padding: 0px;
     }
 

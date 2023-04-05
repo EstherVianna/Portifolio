@@ -4,7 +4,7 @@
     flex-flow: row wrap;
     justify-content: flex-start;
     margin-top: 10px;
-    height:300px;
+    height:250px;
     width: 100%;
     border-top: 10px solid var(--border);
     color:var(--branco);
@@ -22,6 +22,10 @@
     display: block;
     background-color: transparent;
     width: 20%;
+}
+
+.footer-container > .titles:hover{
+    cursor: default;
 }
 
 .footerContent{
@@ -80,8 +84,12 @@
     margin: auto;
     width: 100%;
     background-color: transparent;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-size: 12px;
+}
+
+.rights:hover{
+    cursor: default;
 }
 
 .rights strong{
@@ -89,3 +97,32 @@
     background-color: inherit;
     margin-left: 5px;
 }
+
+.scrollUp{
+    background: inherit;
+    display: flex;
+    margin: auto;
+    margin-left: 95%;
+}
+
+#scrollUp-btn:hover{
+    cursor: pointer;
+}
+
+#scrollUp-btn{    
+    background-color: var(--branco);
+    width: 3.5em;
+    height: 3em;
+    border: none;
+    border-radius: 50px;
+    outline-offset: none;
+    outline: none;
+} 
+
+#scrollUp-btn i{
+    background-color: transparent;
+    color: #915312;
+    font-size: 1.5em;
+}
+
+

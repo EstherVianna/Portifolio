@@ -1,6 +1,5 @@
 const sr = ScrollReveal({
     origin: "top",
-    distance: "50px",
     duration: 2000,
   });
 
@@ -13,36 +12,38 @@ const sr = ScrollReveal({
   sr.reveal('#slogan', { delay: 200 });
 
 const sr2 = ScrollReveal({
-    origin: "right",
-    distance: "100px",
-    duration: 500,
+    origin: "left",
+    distance: "10px",
+    duration: 1000,
 });
 
-sr2.reveal('.menu', {delay: 500 })
+sr2.reveal('#img', {delay: 1000 }
+)
 
+// hide floating medias
 
-function copyAndPaste(){
-    const email = document.querySelector("#email");
-    const text = document.querySelector("#pText")
+const hideMedia = ()=> {
 
-    email.select()
-    navigator.clipboard.writeText(email.value)
-
-    document.innerHTML(`Texto copiado: ${email.value}`)
-    
-} 
-
-window.onscroll = function() {
     const target = document.querySelector(".footer");
     const targetPosition = target.getBoundingClientRect().top;
     const height = window.innerHeight;
     const float = document.querySelector(".float");
 
-    if(targetPosition < height){
-        float.style.display = "none"
-    }
-    else if(targetPosition > height){
-        float.style.display = "flex";
-    }
-}
+        if (targetPosition < height) {
+            float.style.display = "none";
+        }
+        else if (targetPosition > height) {
+            float.style.display = "flex";
+        }
+
+};
+
+window.onscroll = hideMedia;
+
+const angleUp = document.querySelector("#scrollUp-btn");
+
+    angleUp.addEventListener("click", ()=>{
+        window.scrollTo(0, 0)
+    })
+
 
