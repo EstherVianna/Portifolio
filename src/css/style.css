@@ -9,8 +9,6 @@
 @import url(asideFloat.css);
 
 
-
-
 @keyframes moveGradient {
     50% {
       background-position: 100% 50%;}
@@ -18,6 +16,7 @@
 
 html{
     scroll-behavior: smooth;
+    width: 100%;
 }
 
 ::-webkit-scrollbar {

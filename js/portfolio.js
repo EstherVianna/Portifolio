@@ -35,7 +35,6 @@ const hideMedia = ()=> {
         else if (targetPosition > height) {
             float.style.display = "flex";
         }
-
 };
 
 window.onscroll = hideMedia;
@@ -44,6 +43,8 @@ const angleUp = document.querySelector("#scrollUp-btn");
 
     angleUp.addEventListener("click", ()=>{
         window.scrollTo(0, 0)
-    })
+    });
+
+
 
 

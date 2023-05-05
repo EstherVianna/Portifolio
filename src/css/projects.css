@@ -17,8 +17,8 @@
     flex-flow: row wrap;
 }
 
-.proj{
-    min-width: 280px;
+.card{
+    min-width: 250px;
     max-width: 400px;
     height: 560px;
     border: 2px solid var(--preto);
@@ -27,37 +27,37 @@
     margin-bottom: 30px;
 }
 
-.proj:hover{
+.card:hover{
     opacity: 1;
 }
 
-.proj:not(:hover){
+.card:not(:hover){
     opacity: 0.5;
 }
 
-.proj h1{
+.card h1{
     margin-bottom: 10px;
 }
 
-.proj a{
+.card a{
     color: var(--accent-hover);
     font-size: 1rem;
 }
 
-.proj img{
+.card img{
     width:375px; 
     height:200px;
     margin: 5px auto 20px auto;
     border-radius: 14px;
 }
 
-.proj p{
+.card p{
     height: 130px;
     width:350px ;
     margin-bottom: 15px;
 }
 
-.proj button{
+.card button{
     cursor: pointer;
     font-weight: 700;
     transition: all .2s;
@@ -71,17 +71,17 @@
     margin-bottom: 20px;
 }
 
-.proj button > svg{
+.card button > svg{
     width: 34px;
     margin-left: 10px;
     transition: transform .3s ease-in-out;
     fill: var(--accent-hover);
 }
       
-.proj button:hover svg{
+.card button:hover svg{
     transform: translateX(5px);
 }
       
-.proj  button:active{
+.card  button:active{
     transform: scale(0.95);
 }

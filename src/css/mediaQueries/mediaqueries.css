@@ -1,128 +1,246 @@
-@import url(navbar.css);
-@import url(mainContainer.css);
-@import url(aboutAndStacks.css);
-@import url(projects.css);
-@import url(footer.css);
-@import url(asideFloat.css);
+@import url(../navbar.css);
+@import url(../mainContainer.css);
+@import url(../aboutAndStacks.css);
+@import url(../projects.css);
+@import url(../footer.css);
+@import url(../asideFloat.css);
 
-@media only screen and (min-width: 300px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
-    nav .menu{
-        margin-left: 0px;
-    }
-    nav.menu a:hover{
-        padding: 0px;
+    .navbar .logo {
+        width: fit-content;
     }
 
-    .text{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: column nowrap;
+    .navbar .logo a{
+        font-size: 24px;
+    }
+
+    .navbar .menu{
+        margin-left: 10%;
+        flex: 0;
+        margin-top: 15px;
+    }
+
+    .menu a:not(:last-child){
+        display: none;
     }
     
-    .botao{
-        text-align: justify;
+    /*Main Content*/
+    .content{
+        flex-flow: column wrap;
+        align-items: center;
+        height: 600px;
+        width: 100vw;
+    }
+
+    .content .textBox{
+        width: 100%;
+        margin-left: 0;
+        gap: 3em;
+    }
+
+    .textBox #slogan{
+        width: 90%;   
+        margin-left: 0.7em;    
     }
 
     .content img{
+        max-width: 0;
         display: none;
     }
 
-    .textoDev{
-        margin-left: 5%;
+    .content a {
+        display: none;
+    }
+    
+     /*About */
+    #aboutMe{
+        margin: 50px 30px auto;
     }
 
     #about{
-        width: 300px;
+        width: 100%;
     }
 
-    .lista li {
-        width: 200px;
-        margin-left: 100px;
+    /* Projects */
+
+    .card img{
+        width:90%;
+        margin: 5px;
     }
 
-    #email{
-        display: inline;
+    .card p{
+        height: 140px;
+        width:90%;
+    }
+
+    /*footer*/
+
+    .footer{
+        height: fit-content;
+    }
+
+    .footer-container{
+        margin: auto 0.7em;
+        justify-content: baseline;
+        flex-flow: column wrap;
+    }
+
+    .footer-container > .titles{
+        font-size: 18px;
+    }
+
+    .footerContent{
+        width: 100%;
+    }
+
+    .footerContent p{
+        width: 100%;
         font-size: 1em;
-        width: 280px;
-        right: 110px;
+        margin-top: 0;
     }
-
-    #clipboard{
-    right: 165px;
-    }
-
-    .ttm{
-        font-size: 1.5em;
-    }
-
+    
     .socialMedia{
-        margin-top: 50px;
+        margin-top: 10px;
         margin-left: 30px;
     }
 
     .socialMedia a{
         font-size: 1em;
     }
-
-    .socialMedia a:hover{
-        padding: 3px;
+    
+    .scrollUp{
+        left: 90%;
+        margin-right: 60px;
     }
 
     .float{
         display: none;
     }
 }
-@media only screen and (min-width: 600px) and (max-width: 1023px){
-    .menu {
-        margin-left: 0;
+@media only screen and (min-width: 601px) and (max-width:768px){
+    
+    .navbar .menu {
+        margin-left: 5%;
+        margin-top: 15px;
     }
 
-    #sm{
-        margin-left: 25%;
-    }
-    .menu a:hover{
-        padding: 5px;
+    .navbar .menu a{
+        margin: 10px 6px;
+        font-size: var(--font-size);
     }
 
-    .image{
+    .navbar .menu a:hover{
+        padding:5px
+    }
+
+    .content {
+        width: 100vw;
+    }
+
+    .content img{
+        max-width: 0;
         display: none;
     }
 
-    .textoDev{
-        margin-left: 5%;
+    .content a {
+        display: none;
     }
 
-    #about {
-        margin-left: 25px;
-        text-align: justify;
+    .content .textBox{
+        margin-left: 0.5em;
+        gap: 5em;
     }
 
-    #email{
-        display: inline;
-        font-size: 1.3em;
-        width: 280px;
-        right: 110px;
-    }
-    #clipboard{
-        right: 130px;
+    #aboutMe{
+        margin: 50px 30px auto;
     }
 
-    .ttm{
-        font-size: 1.7em;
+    #about{
+        width: 100%;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .footer-container{
+        gap: 10%;
+    }
+
+    .footer-container > .titles{
+        font-size: 22px;
+    }
+
+    .footerContent{
+        width: 100%;
+    }
+
+    .footerContent p{
+        width: 100%;
+        font-size: 1em;
+        margin-top: 0;
     }
 
     .socialMedia{
-        margin-top: 50px;
-        margin-left: 200px;
+        margin-right: 5px;
     }
-    .socialMedia a{
-        font-size: 1.3em;
-    }
-
-    .socialMedia a:hover{
-        padding: 5px;
+    .socialMedia a {
+        font-size: 12px;
+        width: 90px;
     }
 
+    .scrollUp{
+        position: absolute;
+        margin-top: 100px;
+        left: 90%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px){
+    .navbar .menu {
+        margin-left: 20%;
+        margin-top: 15px;
+    }
+
+    .navbar .menu a{
+        margin: 10px 6px;
+        font-size: var(--font-size);
+    }
+
+    .navbar .menu a:hover{
+        padding: 10px
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content #img{
+        width: 400px;
+    }
+
+    .scrollUp{
+        position: absolute;
+        margin-top: 170px;
+        left: 86%;
+    }
+
+}
+@media only screen and (min-width: 993px) and (max-width:1200px){
+    .navbar .menu {
+        margin-left: 30%;
+        margin-top: 15px;
+    }
+
+    .navbar .menu a{
+        margin: 10px 6px;
+    }
+
+   
+    .scrollUp{
+        position: absolute;
+        margin-top: 170px;
+        left: 86%;
+    }
 }

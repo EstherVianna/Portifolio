@@ -9,7 +9,6 @@
 
 .logo{
     display: inline-flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -20,7 +19,8 @@
     font-size: 2em;
     cursor: pointer;
     margin-left: 20px;
-    text-shadow: 1px 1px 40px var(--accent-hover);
+    margin-top: 10px;
+    text-shadow: 1px 1px 15px var(--accent-hover);
 }
 
 .logo a:hover{
@@ -30,7 +30,6 @@
 .menu {
     margin-left: 45%;
     margin-top: 25px;
-    flex: 70%;
     text-transform: uppercase;
     flex-flow: row nowrap;
 }
@@ -51,6 +50,7 @@
     padding: 10px 15px;
     transition: all 500ms ease-in-out;
 }
+
 
 #cv{
     color: var(--accent-hover);
