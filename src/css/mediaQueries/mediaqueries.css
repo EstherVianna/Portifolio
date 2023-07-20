@@ -225,7 +225,6 @@
         margin-top: 170px;
         left: 86%;
     }
-
 }
 @media only screen and (min-width: 993px) and (max-width:1200px){
     .navbar .menu {
@@ -237,7 +236,6 @@
         margin: 10px 6px;
     }
 
-   
     .scrollUp{
         position: absolute;
         margin-top: 170px;
