@@ -9,7 +9,7 @@ Portfolio created to demonstrate my habilities as a front-end developer, where I
 
 - Created and recreated design based in a main caracter: the frontal image;
 - HTML | CSS;
-- Javascript (React will be added in a near future);
+- Javascript;
 - Responsive design;
 
 ## 🪄 Own inspiration
